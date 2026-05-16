@@ -232,9 +232,6 @@ footer{background:var(--dark);color:var(--champagne);padding:36px 6%;display:fle
 .log-entry .log-contact{color:#fff;font-size:12px;font-weight:500;}
 .log-entry .log-time{color:rgba(255,255,255,.35);font-size:9px;margin-top:2px;}
 @media(max-width:640px){#results-popup-box{padding:24px 18px;}#email-log-window{width:100%;right:-100%;}#admin-panel .admin-content{padding:20px 16px;}}
-#admin-login-bar{text-align:center;padding:10px 0 6px 0;}
-#admin-login-bar button{background:none;border:none;color:rgba(255,255,255,.12);font-size:8px;cursor:pointer;letter-spacing:1px;transition:color .3s;}
-#admin-login-bar button:hover{color:rgba(255,255,255,.3);}
 #admin-login-modal{position:fixed;inset:0;z-index:3000;background:rgba(0,0,0,.88);backdrop-filter:blur(16px);display:none;align-items:center;justify-content:center;}
 #admin-login-modal.open{display:flex;}
 #admin-login-modal .login-box{background:#111114;border:1px solid rgba(220,177,95,.2);border-radius:16px;padding:36px 32px;width:100%;max-width:360px;text-align:center;animation:modalSlideIn .4s ease;}
@@ -737,8 +734,8 @@ video.home-camera-frame {
     <a href="#about">About</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
+    <a href="javascript:void(0)" onclick="showAdminLogin()" style="opacity:.12;font-size:8px;letter-spacing:1px;transition:opacity .3s;" onmouseover="this.style.opacity='.3'" onmouseout="this.style.opacity='.12'">· · ·</a>
   </div>
-  <div id="admin-login-bar"><button onclick="showAdminLogin()" type="button">· · ·</button></div>
 </footer>
 
 <!-- ADMIN LOGIN MODAL -->
