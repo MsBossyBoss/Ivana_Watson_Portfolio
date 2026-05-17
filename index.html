@@ -394,6 +394,9 @@ video.home-camera-frame {
   .about-g,.skills-g,.con-g{grid-template-columns:1fr;}
   .hero-stats{gap:24px;}section{padding:64px 5%;}
   #home{grid-template-columns:1fr !important;}
+  #home > div{grid-template-columns:1fr !important;gap:32px !important;}
+  .hero-inner{max-width:100% !important;}
+  #analyzer-card{max-width:100% !important;width:100% !important;box-sizing:border-box !important;}
   #chat-panel{width:calc(100vw - 32px);right:16px;}
   .analyzer-box{max-width:92vw;padding:0;border-radius:32px;}
   .analyzer-box::before{height:24px;}
@@ -445,7 +448,7 @@ video.home-camera-frame {
     </div>
 
     <!-- RIGHT: Analyzer Card -->
-    <div style="background:linear-gradient(135deg,rgba(15,15,15,.8),rgba(16,17,20,.9));border:1px solid rgba(220,177,95,.15);border-radius:28px;padding:32px;max-width:580px;box-shadow:0 40px 100px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.05);backdrop-filter:blur(20px);height:fit-content;">
+    <div id="analyzer-card" style="background:linear-gradient(135deg,rgba(15,15,15,.8),rgba(16,17,20,.9));border:1px solid rgba(220,177,95,.15);border-radius:28px;padding:32px;max-width:580px;box-shadow:0 40px 100px rgba(0,0,0,.5),inset 0 1px 0 rgba(255,255,255,.05);backdrop-filter:blur(20px);height:fit-content;">
       <!-- Header -->
       <div style="text-align:center;margin-bottom:28px;">
         <h2 style="font-family:'Cormorant Garamond',serif;font-size:2rem;margin:0;font-weight:300;letter-spacing:.5px;background:linear-gradient(135deg,#e8c574,#dcb15f,#f5dfa0,#dcb15f);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;filter:drop-shadow(0 0 12px rgba(220,177,95,.2));">13Esthetics Advanced Skincare Analysis</h2>
